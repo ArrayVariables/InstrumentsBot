@@ -54,8 +54,8 @@ async def on_message(message):
 		await client.send_message(message.channel, "./help - Direct messages you a help list, its actually notable for a very few mistakes observed.")
 	elif message.content.startswith("./ende ende"):
 		await client.send_message(message.channel, "ende ende")
-	elif message.content.startswith("}>evalprint"):
-		variable = message.content[len("./evalprint"):].strip()
+	elif message.content.startswith("}>print"):
+		variable = message.content[len("}>print"):].strip()
 		await client.send_message(message.channel, variable)
 	elif message.content.startswith("}>bonzi"):
 		await client.send_message(message.channel, "hi, i am bonzi buddy, to get started, plz type ./hell")
